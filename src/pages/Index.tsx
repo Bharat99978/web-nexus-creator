@@ -171,7 +171,8 @@ const Index = () => {
           <div className="footer-fade-in relative z-10 text-center">
             <h2 className="mb-4 text-2xl font-bold">Developer</h2>
             <div className="mb-6">
-              <h3 className="text-xl font-semibold">Bharat Singh</h3>
+              <h3 className="developer-name mb-2">भारत सिंग</h3>
+              <h4 className="text-lg text-muted-foreground">(Bharat Singh)</h4>
               <p className="mt-2 text-muted-foreground">
                 Full Stack Developer & Digital Creator
               </p>
@@ -179,14 +180,14 @@ const Index = () => {
                 href="https://telegram.me/Official_ARK00"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-block text-primary hover:underline"
+                className="telegram-link"
               >
                 Connect on Telegram
               </a>
             </div>
             <div className="mt-8 border-t pt-6">
               <p className="copyright-text">
-                © {new Date().getFullYear()} Bharat Singh. All rights reserved.
+                © {new Date().getFullYear()} भारत सिंग. All rights reserved.
               </p>
             </div>
           </div>
