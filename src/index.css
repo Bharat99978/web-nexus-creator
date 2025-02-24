@@ -64,6 +64,21 @@
   transform: scale(1.05);
 }
 
+.footer-fade-in {
+  animation: footerFadeIn 1s ease-out;
+}
+
+@keyframes footerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -86,4 +101,17 @@
   to {
     opacity: 1;
   }
+}
+
+.developer-section {
+  @apply relative overflow-hidden;
+}
+
+.developer-section::before {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-primary/5 to-primary/10 opacity-50;
+}
+
+.copyright-text {
+  @apply animate-pulse text-muted-foreground hover:text-foreground transition-colors duration-300;
 }

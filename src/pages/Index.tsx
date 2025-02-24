@@ -81,8 +81,8 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-background px-4 py-8 md:px-8">
-      <div className="mx-auto max-w-5xl">
+    <div className="min-h-screen w-full bg-background">
+      <div className="mx-auto max-w-5xl px-4 py-8 md:px-8">
         <div className="mb-12 text-center">
           <h1 className="mb-2 text-4xl font-bold tracking-tight">My Websites</h1>
           <p className="text-lg text-muted-foreground">
@@ -165,6 +165,31 @@ const Index = () => {
               onDelete={() => handleDelete(website.id)}
             />
           ))}
+        </div>
+
+        <div className="mt-20 developer-section rounded-xl border bg-card p-8">
+          <div className="footer-fade-in relative z-10 text-center">
+            <h2 className="mb-4 text-2xl font-bold">Developer</h2>
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold">Bharat Singh</h3>
+              <p className="mt-2 text-muted-foreground">
+                Full Stack Developer & Digital Creator
+              </p>
+              <a
+                href="https://telegram.me/Official_ARK00"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block text-primary hover:underline"
+              >
+                Connect on Telegram
+              </a>
+            </div>
+            <div className="mt-8 border-t pt-6">
+              <p className="copyright-text">
+                © {new Date().getFullYear()} Bharat Singh. All rights reserved.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
