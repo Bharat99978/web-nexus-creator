@@ -39,12 +39,16 @@ const WebsiteCard = ({ name, description, url, icon, onEdit, onDelete }: Website
         className="block"
       >
         <div className="flex items-start gap-4">
-          <div className="h-12 w-12 overflow-hidden rounded-lg">
+          <div className="h-12 w-12 overflow-hidden rounded-lg bg-muted">
             <img
               src={icon}
               alt={`${name} icon`}
               className="h-full w-full object-cover"
               loading="lazy"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.src = "https://picsum.photos/100"; // Fallback image
+              }}
             />
           </div>
           <div className="flex-1">
